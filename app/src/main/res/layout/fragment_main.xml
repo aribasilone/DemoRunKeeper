@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/personalRecords_label"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@color/colorAccent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/trophyCategory_1"
+                android:textColor="@color/font_color_darkgray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/personalRecords_pagination"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorAccent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="x out of y"
+                android:textAlignment="textEnd"
+                android:textColor="@color/font_color_darkgray"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/vraces_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="24dp"
+            android:measureWithLargestChild="true"
+            android:shrinkColumns="true"
+            android:stretchColumns="0,2">
+
+            <TableRow
+                android:id="@+id/vraces_row1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        app:srcCompat="@drawable/runkeeper_records_longest_run" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Longest Run"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        app:srcCompat="@drawable/runkeeper_records_highest_elevation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Highest Elevation"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="2095 ft"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/vraces_row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        app:srcCompat="@drawable/runkeeper_record_5k" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fastest 5K"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        app:srcCompat="@drawable/runkeeper_records_10k" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10K"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00:00:00"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/vraces_row3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        app:srcCompat="@drawable/runkeeper_records_half" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Half Marathon"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="124dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/imgDescCat1"
+                        android:tintMode="src_atop"
+                        app:srcCompat="@drawable/runkeeper_records_marathon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Virtual 5K Race"
+                        android:textColor="@color/font_color_darkgray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Not Yet"
+                        android:textColor="@color/font_color_darkgray" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!--        <include layout="@layout/virtual_races_grid" />-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
